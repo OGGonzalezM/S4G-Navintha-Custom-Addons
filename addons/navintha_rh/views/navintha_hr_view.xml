@@ -35,8 +35,15 @@
                             </page>
 
                             <page string="Responsabilidades">
-                                <label for="x_navintha_responsabilidades_descripcion">Responsabilidades</label>
-                                <field name="x_navintha_responsabilidades_descripcion"></field>
+                                <div>
+                                    <field name="x_navintha_responsabilidades">
+                                        <tree>
+                                            <field name="name"></field>
+                                            <field name="x_navintha_resfrecuencia"></field>
+                                            <field name="x_navintha_respdescripcion"></field>
+                                        </tree>
+                                    </field>
+                                </div>
 				
                                 <label for="x_navintha_ltd_desicion">Libertad para tomar desiciones</label>
                                 <field name="x_navintha_ltd_desicion"></field><br/>
@@ -62,9 +69,13 @@
                                 <field name="x_navintha_disponibilidadcambioresidencia"></field>
                                 <br />
                             </page>
-			    <page string="Habilidades">
-				<field name="x_navintha_skills"/>
+			    <page string="Competencias">
+				    <field name="x_navintha_skills" >
+                        <field name="name"></field>
+                        <field name="x_navintha_descripcioncompetencia"></field>
+                    </field>
 			    </page>
+
 			    <page string="Equipo asignable">
     				<field name="x_posibleequipo_navintha">
     				</field>

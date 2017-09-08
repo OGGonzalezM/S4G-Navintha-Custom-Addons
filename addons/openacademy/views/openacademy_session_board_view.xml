@@ -4,7 +4,7 @@
     <data>
 
         <record model="ir.actions.act_window" id="act_session_graph">
-            <field name="name">Attendees by course</field>
+            <field name="name">Asistentes por curso</field>
             <field name="res_model">openacademy.session</field>
             <field name="view_type">form</field>
             <field name="view_mode">graph</field>
@@ -13,7 +13,7 @@
         </record>
 
         <record model="ir.actions.act_window" id="act_session_calendar">
-            <field name="name">Sessions</field>
+            <field name="name">Sesiones</field>
             <field name="res_model">openacademy.session</field>
             <field name="view_type">form</field>
             <field name="view_mode">calendar</field>
@@ -21,18 +21,18 @@
         </record>
 
         <record model="ir.actions.act_window" id="act_course_list">
-            <field name="name">Courses</field>
+            <field name="name">Cursos</field>
             <field name="res_model">openacademy.course</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <record model="ir.ui.view" id="board_session_form">        	
-            <field name="name">Session Dashboard Form</field>
+            <field name="name">Vista del tablero</field>
             <field name="model">board.board</field>
             <field name="type">form</field>
             <field name="arch" type="xml">
-                <form string="Session Dashboard">
+                <form string="Tablero de sesiones">
                     <board style="2-1">
                         <column>
                             <action
@@ -55,7 +55,7 @@
         </record>
 
         <record model="ir.actions.act_window" id="open_board_session">
-          <field name="name">Session Dashboard</field>
+          <field name="name">Tablero de sesiones</field>
           <field name="res_model">board.board</field>
           <field name="view_type">form</field>
           <field name="view_mode">form</field>
@@ -64,13 +64,13 @@
         </record>
 
         <menuitem
-            name="Session Dashboard" parent="base.menu_reporting_dashboard"
+            name="Tablero de sesiones" parent="base.menu_reporting_dashboard"
             action="open_board_session"
             sequence="1"
             id="menu_board_session" icon="terp-graph"/>
 
         <menuitem
-            name="Session Dashboard" parent="main_openacademy_menu"
+            name="Tablero de sesiones" parent="main_openacademy_menu"
             action="open_board_session"
             sequence="1"
             id="menu_board_session" icon="terp-graph"/>

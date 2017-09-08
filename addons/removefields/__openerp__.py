@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Navintha - RH",
+    'name': "Remover campos",
 
     'summary': """
-        Campos agregados para Navintha""",
+        Remover campos que no se notaron muy utiles""",
 
     'description': """
-       Creacion de los campos requeridos para navintha
+        Campos que no se hicieron muy utiles, remover u ocultarlos
     """,
 
     'author': "Soluciones4G",
@@ -15,15 +15,16 @@
     # Categories can be used to filter modules in modules listing
     # for the full list
     'category': 'Uncategorized',
-    'version': '1.0',
+    'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr'],
+    'depends': ['base'],
 
-    # always loaded
+    # always loaded Recurde cargar deacuerdo al orden deseado
     'data': [
-        'views/navintha_hr_view.xml',
-        'views/estado_civil_view.xml',
+        'views/remove_tagsincontact_view.xml',
+        'views/remove_notebookincontacts_view.xml',
+        #'views/test.xml',
     ],
     'installable':True,
     'auto_install':False,

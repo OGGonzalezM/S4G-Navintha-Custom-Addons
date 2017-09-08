@@ -16,14 +16,17 @@
                     <group>
                         <group string="Spouse">
                             <field name="fam_spouse"/>
-                            <field name="fam_spouse_employer"/>
+                            <!-- <field name="fam_spouse_employer"/> -->
                             <field name="fam_spouse_tel"/>
+                            <field name="fam_spose_borndate"/>
+                            <field name="fam_spouse_address"/>
                         </group>
                         <group string="Parents">
                             <field name="fam_father"/>
                             <field name="fam_father_date_of_birth"/>
                             <field name="fam_mother"/>
                             <field name="fam_mother_date_of_birth"/>
+                            <field name="fam_address"/>
                         </group>
                     </group>
                     <group string="Children">

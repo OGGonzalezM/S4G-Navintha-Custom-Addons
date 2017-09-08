@@ -25,7 +25,7 @@
      'document',
      'employee_orientation',
      'hr',
-     'hr_skill',
+     #'hr_skill',
      'hr_holidays',
      'hr_recruitment',
      'hr_equipment',

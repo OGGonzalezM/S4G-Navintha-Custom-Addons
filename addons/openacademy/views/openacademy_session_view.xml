@@ -8,7 +8,7 @@
 				<form string="Session Form"> 
                     <!-- Cabecera para poner botones u otras cosas -->
                     <header>
-                        <!-- Buttons to change the state of a record(session) -->
+                        <!-- Buttons to change the state of a record(session)
                         <button name="button_draft"
                              type="workflow" string="Reset to draft"
                              states="confirmed,done"></button>
@@ -19,6 +19,7 @@
                              type="workflow" string="Mark as done"
                              states="confirmed" class="oe_highlight"></button>
                        <field name="state" widget="statusbar" statusbar_colors='{"confirmed":"red","done":"blue"}'/>
+                       -->
                     </header>
 
 					<sheet>
